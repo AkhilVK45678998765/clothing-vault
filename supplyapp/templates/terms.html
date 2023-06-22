@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+         body{
+          background-image:url("https://i.pinimg.com/474x/2f/ca/b0/2fcab000455fe6b11999a5a32c1b272f.jpg")
+          }
+
+         .btn {
+            background-image: linear-gradient(to right, #283048 0%, #859398  51%, #283048  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+<!--            color: white;            -->
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+
+
+          .offcanvas-body{
+          background-image:url("https://i.pinimg.com/474x/2b/ae/fc/2baefcb4425153a079b3ba865ac7eeba.jpg")
+          }
+
+
+
+
+    </style>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6b64bdfcb8.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light p-4">
+    <div class="container-fluid" style="font-family:fantasy">
+        <span class="navbar-brand mb-0 h1">Clothing Vault <i class="fa-solid fa-shirt"></i></span>
+
+
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"><i class="fa-sharp fa-solid fa-bars " style="color:white"></i>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Clothing Vault <i class="fa-solid fa-shirt"></i></h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <center>
+
+                    <button type="button" class="btn  btn-sm "><a href="http://127.0.0.1:8000/supplyapp/index/"
+                                                                  style="color:white;text-decoration:none;">Home
+
+
+                    </a></button>
+                    <br>
+
+
+                </center>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5 mb-5 ">
+    <center><h1 style="color:white;font-family:fantasy">Terms & conditions</h1></center>
+    <div class="row p-1 mt-5 ">
+        <div class="col text-white  border  text-center pt-2">
+
+            <p class="mt-4" align="justify">1. “Seller” means [SANITARYWARE COMPANY]. “Buyer” means the person firm or company named in the order confirmation acting as principal and not agent. “Goods” means the Goods specified or referred to in the Order Confirmation and references to the Goods shall where the context so admits include references to any part or single item or replacement. “Site” means the place specified in the Order Confirmation to which the Goods are to be supplied under the contract. “Order” means the Letter of Intent or other instruction sent to the Seller for the supply of Goods. “Order Confirmation” means the order confirmation forwarded by Seller to Buyer. “The Contract” means the agreement concluded between Seller and Buyer in accordance with and subject to these conditions.</p>
+        </div>
+
+    </div>
+    <div class="row p-1 mt-5 ">
+        <div class="col text-white  border  text-center pt-2">
+
+            <p class="mt-4" align="justify">2. These conditions shall be incorporated in and govern every offer acceptance and contact for the sale of Goods by the Seller and all other conditions warranties and representations whether made orally or in writing and whether express or implied are hereby excluded.</p>
+        </div>
+
+    </div>
+    <div class="row p-1 mt-5 ">
+        <div class="col text-white  border  text-center pt-2">
+
+            <p class="mt-4" align="justify">3. The price for the Goods shall be specified or referred to in the Order Confirmation and unless otherwise stated the price shall be delivered Site UK mainland excluding Value Added Tax.</p>
+        </div>
+
+    </div>
+    <div class="row p-1 mt-5 ">
+        <div class="col text-white  border  text-center pt-2">
+
+            <p class="mt-4" align="justify">4. Unless otherwise agreed in writing between Seller and Buyer payment shall be made in all respects in accordance with the terms of the Contact.</p>
+        </div>
+
+    </div>
+    <div class="row p-1 mt-5 ">
+        <div class="col text-white  border  text-center pt-2">
+
+            <p class="mt-4" align="justify">5.  All delivery and other dates and periods quoted by Seller are reasonable estimates only and accordingly Seller shall not be liable for any loss or damage (including any consequential loss or damage) resulting from any failure to deliver on any particular date or dates. Dates given for delivery are not of the essence.</p>
+        </div>
+
+    </div>
+</div>
+
+
+</body>
+{% include 'footer.html' %}
+</html>
+

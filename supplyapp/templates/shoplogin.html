@@ -1,0 +1,165 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+
+
+
+<!--         .btn {-->
+<!--            background-image: linear-gradient(to right, #232526 0%, #414345  51%, #232526  100%);-->
+<!--            margin: 10px;-->
+<!--            padding: 15px 45px;-->
+<!--            text-align: center;-->
+<!--            text-transform: uppercase;-->
+<!--            transition: 0.5s;-->
+<!--            background-size: 200% auto;-->
+<!--            color: white;-->
+<!--            box-shadow: 0 0 20px #eee;-->
+<!--            border-radius: 10px;-->
+<!--            display: block;-->
+<!--          }-->
+
+<!--          .btn {-->
+<!--            background-position: right center; /* change the direction of the change here */-->
+<!--            color: #fff;-->
+<!--            text-decoration: none;-->
+<!--          }-->
+
+
+
+
+
+
+ body{
+          margin:0;
+          padding:0;
+          background:url("https://i.pinimg.com/474x/83/b5/20/83b52092dc17ac92b54c9965286544f5.jpg");
+<!--          background-size:cover;-->
+          font-family:arial;
+          text-align:center;
+          }
+          .loginbox{
+          position:absolute;
+          top:50%;
+          left:50%;
+          transform:translate(-50%,-50%);
+          width:300px;
+          height:400px;
+          padding:70px 40px;
+          box-sizing:border-box;
+          background:rgba(0,0,0,0,0.5);
+          border-radius:30px;
+          }
+<!--          .user{-->
+<!--          width:100px;-->
+<!--          height:100px;-->
+<!--          border-radius:50%;-->
+<!--          overflow:hidden;-->
+<!--          position:absolute;-->
+<!--          top:calc(-100px/2);-->
+<!--          left:calc(50% - 50px);-->
+<!--          }-->
+          .loginbox input
+          {
+          width:100%;
+          margin-bottom:20px;
+          }
+          .loginbox input[type=email],
+          .loginbox input[type=password]{
+          border:none;
+          border-bottom:1px solid #fff;
+          background:transparent;
+          outline:none;
+          height:4opx;
+          color:#fff;
+          font-size:14px;
+          }
+          ::placeholder{
+          color:rgba(255,255,255,0.5)
+          }
+          .loginbox input[type=submit]{
+          border:none;
+          outline:none;
+          height:40px;
+          color:#eee;
+          font-size:16px;
+          background:#ff8c00;
+          cursor:pointer;
+          border-radius:20px;
+          margin:12px 0 18px;
+          font-weight:bold;
+          text-transform:uppercase;
+          }
+          .loginbox h2{
+          margin:0;
+          padding:0 0 26px;
+          color:#d2dfe7;
+          }
+          .loginbox input[type=submit]:hover{
+          background:grey;
+          color:#fff;
+          }
+          .loginbox a{
+          color:#fff;
+          font-size:14px;
+          font-weight:bold;
+          text-decoration:none'
+          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<div class="loginbox">
+
+    <h2 style="font-family:cursive"> Shop Login</h2>
+    <form method="post">{% csrf_token %}
+        <input type="email" name="email" placeholder="Enter shop's email" required>
+        <input type="password" name="password" placeholder="Enter password" required>
+        <input type="submit" name="signin" value="Sign in">
+        <a href="http://127.0.0.1:8000/supplyapp/shopregister/" style="text-decoration:none">Dont have an account ? Sign up</a>
+
+    </form>
+
+</div>
+
+
+</body>
+</html>

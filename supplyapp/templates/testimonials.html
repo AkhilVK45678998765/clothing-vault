@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+         body{
+          background-image:url("https://i.pinimg.com/474x/2f/ca/b0/2fcab000455fe6b11999a5a32c1b272f.jpg")
+          }
+
+         .btn {
+            background-image: linear-gradient(to right, #283048 0%, #859398  51%, #283048  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+<!--            color: white;            -->
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+
+
+          .offcanvas-body{
+          background-image:url("https://i.pinimg.com/474x/2b/ae/fc/2baefcb4425153a079b3ba865ac7eeba.jpg")
+          }
+
+
+
+
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6b64bdfcb8.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light p-4">
+    <div class="container-fluid" style="font-family:fantasy">
+        <span class="navbar-brand mb-0 h1">Clothing Vault <i class="fa-solid fa-shirt"></i></span>
+
+
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"><i class="fa-sharp fa-solid fa-bars " style="color:white"></i>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Clothing Vault <i class="fa-solid fa-shirt"></i></h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <center>
+
+                    <button type="button" class="btn  btn-sm "><a href="http://127.0.0.1:8000/supplyapp/index/"
+                                                                  style="color:white;text-decoration:none;">Home
+
+
+                    </a></button>
+                    <br>
+
+
+                </center>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-5 mb-5 ">
+    <center><h1 style="color:white;font-family:fantasy">Testimonials</h1></center>
+    <div class="row p-1 mt-5 ">
+        <div class="col-3 text-white  border  text-center pt-2">
+            <i class="fa-solid fa-user "><i style="font-family:cursive"> Akhil</i> </i>
+            <p class="mt-4" align="justify">It was very easy to make a purchase online and the price was good. Order
+                confirmation, invoice, and shipping information was provided very quickly, even without formally
+                requesting them. Delivery was much faster than expected.</p>
+        </div>
+
+        <div class="col-3 text-white  border  text-center pt-2">
+            <i class="fa-solid fa-user "><i style="font-family:cursive"> Aami</i> </i>
+            <p class="mt-4" align="justify">“Good Prices, Awesome service, Very speedy delivery... I am impressed with
+                everything that I have ordered so far, Even the packaging was top notch...</p>
+        </div>
+        <div class="col-3 text-white  border  text-center pt-2">
+            <i class="fa-solid fa-user "><i style="font-family:cursive"> Aadi</i> </i>
+            <p class="mt-4" align="justify">“Great experience. Quick delivery . I will order items
+                again .”</p>
+        </div>
+        <div class="col-3 text-white  border  text-center pt-2">
+            <i class="fa-solid fa-user "><i style="font-family:cursive"> Aami</i> </i>
+            <p class="mt-4" align="justify">“Good Prices, Awesome service, Very speedy delivery... I am impressed with
+                everything that I have ordered so far, Even the packaging was top notch...</p>
+        </div>
+    </div>
+</div>
+
+
+</body>
+{% include 'footer.html' %}
+</html>
+

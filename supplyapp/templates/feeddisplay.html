@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+
+    <style>
+
+
+
+
+
+
+
+         .btn {
+            background-image: linear-gradient(to right, #283048 0%, #859398  51%, #283048  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+<!--            color: white;            -->
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+
+
+          .offcanvas-body{
+          background-image:url("https://i.pinimg.com/474x/2b/ae/fc/2baefcb4425153a079b3ba865ac7eeba.jpg")
+          }
+
+          body{
+          background-image:url("https://i.pinimg.com/474x/2f/ca/b0/2fcab000455fe6b11999a5a32c1b272f.jpg")
+          }
+
+          .container{
+          background-image:url("https://i.pinimg.com/474x/2f/ca/b0/2fcab000455fe6b11999a5a32c1b272f.jpg")
+          }
+
+
+          img:hover{
+          transform: scale(1.1);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+    <script src="https://kit.fontawesome.com/6b64bdfcb8.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light p-4">
+    <div class="container-fluid" style="font-family:fantasy">
+        <span class="navbar-brand mb-0 h1"> Clothing Vault<i class="fa-solid fa-shirt"></i></span>
+
+
+        <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"><i class="fa-sharp fa-solid fa-bars " style="color:white"></i>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel">Clothing Vault <i class="fa-solid fa-shirt"></i></h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <center>
+                    <button type="button" class="btn  btn-sm "><a href="http://127.0.0.1:8000/supplyapp/userprofile/"
+                                                                  style="color:white;text-decoration:none;">View
+                        products
+
+
+                    </a></button>
+                    <br>
+
+                    <!--                    <button type="button" class="btn  btn-sm "><a href="http://127.0.0.1:8000/supplyapp/mywish/"-->
+                    <!--                                                                  style="color:white;text-decoration:none;">View my-->
+                    <!--                        wishlist-->
+
+                    <!--                    </a></button>-->
+                    <!--                    <br>-->
+                    <!--                    <button type="button" class="btn  btn-sm "><a href="http://127.0.0.1:8000/supplyapp/mycart/"-->
+                    <!--                                                                  style="color:white;text-decoration:none;">View my-->
+                    <!--                        cart-->
+
+                    <!--                    </a></button>-->
+                    <br>
+
+                    <button type="button" class="btn  btn-sm "><a href="http://127.0.0.1:8000/supplyapp/index/"
+                                                                  style="color:white;text-decoration:none;">Logout</a>
+                    </button>
+
+                </center>
+            </div>
+        </div>
+    </div>
+</nav>
+
+{% for i,j,k in list %}
+<center>
+    <div class="container mt-5 mb-5">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="{% static i %}" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+
+                        <p class="card-text" style="font-family:cursive">{{j}}</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        <a class="btn  text-white" href="http://127.0.0.1:8000/supplyapp/userprofile/">View products</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</center>
+{% endfor %}
+
+</body>
+{% include 'footer.html' %}
+</html>
