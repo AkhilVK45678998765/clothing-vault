@@ -1,0 +1,36 @@
+from django.urls import path
+from .views import *
+
+urlpatterns = [
+    path('index/', index),
+    path('footer/', footer),
+    path('login/', login),
+    path('register/', register),
+    path('shoplogin/', shoplogin),
+    path('shopregister/', shopregister),
+    path('productdetails/',productdetails),
+    path('productdisplay/',productdisplay),
+    path('deleteproduct/<int:id>',deleteproduct),
+    path('editproduct/<int:id>',editproduct),
+    path('userprofile/',userprofile),
+    path('wishlist/<int:id>', wishlist),
+    path('mywish/', mywish),
+    path('removewish/<int:id>', removewish),
+    path('cart/<int:id>', cart),
+    path('mycart/', mycart),
+    path('removecart/<int:id>', removecart),
+    # path('success/', success),
+    path('wishlisttocart/<int:id>',wishlisttocart),
+    path('buy/<int:id>',buy),
+    path('vieworder/',vieworder),
+    path('sucess/',success),
+    path('failed/',failed),
+    path('passfail/',passfail),
+    path('testimonials/',testimonials),
+    path('terms/',terms),
+    path('bill/',bill),
+    path('feed/',feed),
+path('feeddisplay/',feeddisplay),
+path('feedsuccess/',feedsuccess),
+
+]
